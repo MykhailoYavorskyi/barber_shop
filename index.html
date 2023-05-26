@@ -126,22 +126,64 @@
           <div class="about-container container">
             <ul class="about-list list">
               <li class="about-item">
-                <img
-                  class="about-img"
-                  src="./images/about/img-1.jpg"
-                  alt=""
-                  width="270"
-                  height="445"
-                />
+                <picture>
+                  <!-- Desktop screen -->
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./images/about/img-1_desk@1x.jpeg 1x,
+                      ./images/about/img-1_desk@2x.jpeg 2x
+                    "
+                    type="image/jpeg"
+                  />
+                  <!-- Phone & tablet screen -->
+                  <source
+                    media="(max-width: 1199px)"
+                    srcset="
+                      ./images/about/img-1_tab@1x.jpeg 1x,
+                      ./images/about/img-1_tab@2x.jpeg 2x
+                    "
+                    type="image/jpeg"
+                  />
+                  <img
+                    class="about-img"
+                    src="./images/about/img-1_tab@1x.jpeg"
+                    alt=""
+                    width="270"
+                    height="445"
+                    loading="lazy"
+                  />
+                </picture>
               </li>
               <li class="about-item">
-                <img
-                  class="about-img"
-                  src="./images/about/img-2.jpg"
-                  alt=""
-                  width="270"
-                  height="445"
-                />
+                <picture>
+                  <!-- Desktop screen -->
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./images/about/img-2_desk@1x.jpeg 1x,
+                      ./images/about/img-2_desk@2x.jpeg 2x
+                    "
+                    type="image/jpeg"
+                  />
+                  <!-- Phone & tablet screen -->
+                  <source
+                    media="(max-width: 1199px)"
+                    srcset="
+                      ./images/about/img-2_tab@1x.jpeg 1x,
+                      ./images/about/img-2_tab@2x.jpeg 2x
+                    "
+                    type="image/jpeg"
+                  />
+                  <img
+                    class="about-img"
+                    src="./images/about/img-2_tab@1x.jpeg"
+                    alt=""
+                    width="270"
+                    height="445"
+                    loading="lazy"
+                  />
+                </picture>
               </li>
             </ul>
             <div class="about-right-side">
@@ -161,7 +203,7 @@
           </div>
         </section>
         <!-- Price section -->
-        <!-- <section class="price section" id="price">
+        <section class="price section" id="price">
           <div class="container">
             <p class="uppertitle uppertitle-light">Spend your time with the best masters</p>
             <h2 class="title title-light">Services and prices</h2>
@@ -202,9 +244,9 @@
             </ul>
             <button class="price-btn btn btn-light" type="button">Online-booking</button>
           </div>
-        </section> -->
+        </section>
         <!-- Benefits section -->
-        <!-- <section class="benefits section">
+        <section class="benefits section">
           <div class="benefits-container container">
             <div class="benefits-left-side">
               <ul class="benefits-list list">
@@ -255,7 +297,7 @@
               </p>
             </div>
           </div>
-        </section> -->
+        </section>
         <!-- Team section -->
         <section class="team section" id="team">
           <div class="team-container container">
@@ -272,15 +314,15 @@
                   <img
                     class="team-img"
                     srcset="
-                      ./images/team/img-1_370.jpg 370w,
-                      ./images/team/img-1_418.jpg 418w,
-                      ./images/team/img-1_450.jpg 450w,
-                      ./images/team/img-1_740.jpg 740w,
-                      ./images/team/img-1_836.jpg 836w,
-                      ./images/team/img-1_900.jpg 900w
+                      ./images/team/img-1_370.jpeg 370w,
+                      ./images/team/img-1_418.jpeg 418w,
+                      ./images/team/img-1_450.jpeg 450w,
+                      ./images/team/img-1_740.jpeg 740w,
+                      ./images/team/img-1_836.jpeg 836w,
+                      ./images/team/img-1_900.jpeg 900w
                     "
                     sizes="(min-width: 1200px) 370px,( min-width: 768px) 450px, (min-width: 480px) 418px, 100vw"
-                    src="./images/team/img-1.jpg"
+                    src="./images/team/img-1.jpeg"
                     alt=""
                     width="450"
                     height="346"
@@ -356,15 +398,15 @@
                   <img
                     class="team-img"
                     srcset="
-                      ./images/team/img-2_370.jpg 370w,
-                      ./images/team/img-2_418.jpg 418w,
-                      ./images/team/img-2_450.jpg 450w,
-                      ./images/team/img-2_740.jpg 740w,
-                      ./images/team/img-2_836.jpg 836w,
-                      ./images/team/img-2_900.jpg 900w
+                      ./images/team/img-2_370.jpeg 370w,
+                      ./images/team/img-2_418.jpeg 418w,
+                      ./images/team/img-2_450.jpeg 450w,
+                      ./images/team/img-2_740.jpeg 740w,
+                      ./images/team/img-2_836.jpeg 836w,
+                      ./images/team/img-2_900.jpeg 900w
                     "
                     sizes="(min-width: 1200px) 370px,( min-width: 768px) 450px, (min-width: 480px) 418px, 100vw"
-                    src="./images/team/img-1.jpg"
+                    src="./images/team/img-1.jpeg"
                     alt=""
                     width="450"
                     height="346"
@@ -440,15 +482,15 @@
                   <img
                     class="team-img"
                     srcset="
-                      ./images/team/img-3_370.jpg 370w,
-                      ./images/team/img-3_418.jpg 418w,
-                      ./images/team/img-3_450.jpg 450w,
-                      ./images/team/img-3_740.jpg 740w,
-                      ./images/team/img-3_836.jpg 836w,
-                      ./images/team/img-3_900.jpg 900w
+                      ./images/team/img-3_370.jpeg 370w,
+                      ./images/team/img-3_418.jpeg 418w,
+                      ./images/team/img-3_450.jpeg 450w,
+                      ./images/team/img-3_740.jpeg 740w,
+                      ./images/team/img-3_836.jpeg 836w,
+                      ./images/team/img-3_900.jpeg 900w
                     "
                     sizes="(min-width: 1200px) 370px,( min-width: 768px) 450px, (min-width: 480px) 418px, 100vw"
-                    src="./images/team/img-1.jpg"
+                    src="./images/team/img-1.jpeg"
                     alt=""
                     width="450"
                     height="346"
@@ -542,10 +584,10 @@
                   <source
                     media="(min-width: 1200px)"
                     srcset="
-                      ./images/gallery/img-1_desk@1x.jpg 1x,
-                      ./images/gallery/img-1_desk@2x.jpg 2x
+                      ./images/gallery/img-1_desk@1x.jpeg 1x,
+                      ./images/gallery/img-1_desk@2x.jpeg 2x
                     "
-                    type="image/jpg"
+                    type="image/jpeg"
                   />
                   <!-- Tablet screen -->
                   <source
@@ -559,10 +601,10 @@
                   <source
                     media="(min-width: 768px)"
                     srcset="
-                      ./images/gallery/img-1_tab@1x.jpg 1x,
-                      ./images/gallery/img-1_tab@2x.jpg 2x
+                      ./images/gallery/img-1_tab@1x.jpeg 1x,
+                      ./images/gallery/img-1_tab@2x.jpeg 2x
                     "
-                    type="image/jpg"
+                    type="image/jpeg"
                   />
                   <!-- Phone screen -->
                   <source
@@ -576,14 +618,14 @@
                   <source
                     media="(max-width: 767px)"
                     srcset="
-                      ./images/gallery/img-1_mob@1x.jpg 1x,
-                      ./images/gallery/img-1_mob@2x.jpg 2x
+                      ./images/gallery/img-1_mob@1x.jpeg 1x,
+                      ./images/gallery/img-1_mob@2x.jpeg 2x
                     "
-                    type="image/jpg"
+                    type="image/jpeg"
                   />
                   <img
                     class="gallery-img"
-                    src="./images/gallery/img-1_mob@1x.jpg"
+                    src="./images/gallery/img-1_mob@1x.jpeg"
                     alt=""
                     width="418"
                     height="360"
@@ -597,32 +639,32 @@
                   <source
                     media="(min-width: 1200px)"
                     srcset="
-                      ./images/gallery/img-2_desk@1x.jpg 1x,
-                      ./images/gallery/img-2_desk@2x.jpg 2x
+                      ./images/gallery/img-2_desk@1x.jpeg 1x,
+                      ./images/gallery/img-2_desk@2x.jpeg 2x
                     "
-                    type="image/jpg"
+                    type="image/jpeg"
                   />
                   <!-- Tablet screen -->
                   <source
                     media="(min-width: 768px)"
                     srcset="
-                      ./images/gallery/img-2_tab@1x.jpg 1x,
-                      ./images/gallery/img-2_tab@2x.jpg 2x
+                      ./images/gallery/img-2_tab@1x.jpeg 1x,
+                      ./images/gallery/img-2_tab@2x.jpeg 2x
                     "
-                    type="image/jpg"
+                    type="image/jpeg"
                   />
                   <!-- Phone screen -->
                   <source
                     media="(max-width: 767px)"
                     srcset="
-                      ./images/gallery/img-2_mob@1x.jpg 1x,
-                      ./images/gallery/img-2_mob@2x.jpg 2x
+                      ./images/gallery/img-2_mob@1x.jpeg 1x,
+                      ./images/gallery/img-2_mob@2x.jpeg 2x
                     "
-                    type="image/jpg"
+                    type="image/jpeg"
                   />
                   <img
                     class="gallery-img"
-                    src="./images/gallery/img-2_mob@1x.jpg"
+                    src="./images/gallery/img-2_mob@1x.jpeg"
                     alt=""
                     width="418"
                     height="360"
@@ -636,32 +678,32 @@
                   <source
                     media="(min-width: 1200px)"
                     srcset="
-                      ./images/gallery/img-3_desk@1x.jpg 1x,
-                      ./images/gallery/img-3_desk@2x.jpg 2x
+                      ./images/gallery/img-3_desk@1x.jpeg 1x,
+                      ./images/gallery/img-3_desk@2x.jpeg 2x
                     "
-                    type="image/jpg"
+                    type="image/jpeg"
                   />
                   <!-- Tablet screen -->
                   <source
                     media="(min-width: 768px)"
                     srcset="
-                      ./images/gallery/img-3_tab@1x.jpg 1x,
-                      ./images/gallery/img-3_tab@2x.jpg 2x
+                      ./images/gallery/img-3_tab@1x.jpeg 1x,
+                      ./images/gallery/img-3_tab@2x.jpeg 2x
                     "
-                    type="image/jpg"
+                    type="image/jpeg"
                   />
                   <!-- Phone screen -->
                   <source
                     media="(max-width: 767px)"
                     srcset="
-                      ./images/gallery/img-3_mob@1x.jpg 1x,
-                      ./images/gallery/img-3_mob@2x.jpg 2x
+                      ./images/gallery/img-3_mob@1x.jpeg 1x,
+                      ./images/gallery/img-3_mob@2x.jpeg 2x
                     "
-                    type="image/jpg"
+                    type="image/jpeg"
                   />
                   <img
                     class="gallery-img"
-                    src="./images/gallery/img-3_mob@1x.jpg"
+                    src="./images/gallery/img-3_mob@1x.jpeg"
                     alt=""
                     width="418"
                     height="360"
@@ -675,32 +717,32 @@
                   <source
                     media="(min-width: 1200px)"
                     srcset="
-                      ./images/gallery/img-4_desk@1x.jpg 1x,
-                      ./images/gallery/img-4_desk@2x.jpg 2x
+                      ./images/gallery/img-4_desk@1x.jpeg 1x,
+                      ./images/gallery/img-4_desk@2x.jpeg 2x
                     "
-                    type="image/jpg"
+                    type="image/jpeg"
                   />
                   <!-- Tablet screen -->
                   <source
                     media="(min-width: 768px)"
                     srcset="
-                      ./images/gallery/img-4_tab@1x.jpg 1x,
-                      ./images/gallery/img-4_tab@2x.jpg 2x
+                      ./images/gallery/img-4_tab@1x.jpeg 1x,
+                      ./images/gallery/img-4_tab@2x.jpeg 2x
                     "
-                    type="image/jpg"
+                    type="image/jpeg"
                   />
                   <!-- Phone screen -->
                   <source
                     media="(max-width: 767px)"
                     srcset="
-                      ./images/gallery/img-4_mob@1x.jpg 1x,
-                      ./images/gallery/img-4_mob@2x.jpg 2x
+                      ./images/gallery/img-4_mob@1x.jpeg 1x,
+                      ./images/gallery/img-4_mob@2x.jpeg 2x
                     "
-                    type="image/jpg"
+                    type="image/jpeg"
                   />
                   <img
                     class="gallery-img"
-                    src="./images/gallery/img-4_mob@1x.jpg"
+                    src="./images/gallery/img-4_mob@1x.jpeg"
                     alt=""
                     width="418"
                     height="360"
@@ -919,25 +961,27 @@
 
       <ul class="mobile-menu list">
         <li>
-          <a href="" class="link">About</a>
+          <a href="#about" class="link">About</a>
         </li>
         <li>
-          <a href="" class="link">Products</a>
+          <a href="#price" class="link">Services and prices</a>
         </li>
         <li>
-          <a href="" class="link">Contacts</a>
+          <a href="#team" class="link">Barbers</a>
+        </li>
+        <li>
+          <a href="#contacts" class="link">Contacts</a>
         </li>
       </ul>
 
       <ul class="mobile-contacts list">
         <li>
-          <a class="link" href="tel:">+11 (000) 111-11-11</a>
+          <a class="link" href="tel:">+38 044 111 11 11</a>
         </li>
         <li>
-          <a class="link" href="mailto:">info@devstudio.com</a>
+          <a class="link" href="mailto:">barbershop@email.com</a>
         </li>
       </ul>
-
       <ul class="mobile-socials list">
         <li class="socials-item">
           <a
